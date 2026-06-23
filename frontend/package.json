@@ -1,0 +1,29 @@
+{
+  "name": "hendrix-mechanical-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@supabase/ssr": "latest",
+    "@supabase/supabase-js": "latest",
+    "next": "latest",
+    "plotly.js": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-plotly.js": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/plotly.js": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "latest",
+    "typescript": "latest"
+  }
+}

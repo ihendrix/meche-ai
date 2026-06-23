@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: hendrix-mechanical-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: ./backend
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: FRONTEND_ORIGINS
+        value: https://hendrix-mechanical-analytics.vercel.app
+      - key: FRONTEND_ORIGIN_REGEX
+        value: https://.*\.vercel\.app
+      - key: MAX_UPLOAD_MB
+        value: 25
